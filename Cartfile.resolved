@@ -1,0 +1,4 @@
+github "robrix/Box" "1.2.2"
+github "Hearst-DD/ObjectMapper" "0.15"
+github "antitypical/Result" "0.4.4"
+github "ReactiveCocoa/ReactiveCocoa" "v3.0-RC.1"
