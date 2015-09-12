@@ -12,9 +12,12 @@ import ObjectMapper
 
 class QuestionManager {
     
-    static func questions(request: NSURLRequest) -> Signal<[Items]?, NSError> {
+    static func questions() -> Signal<[Items]?, NSError> {
         return Signal {
             sink in
+            
+            let url = NSURL(string:"\(APIConstants.APIEndPoint()+APIConstants.APIPathQuestion())")
+            let request = NSURLRequest(URL: url!)
             
             NetworkManager.dataWithRequest(request)
                 .start(next: { data in

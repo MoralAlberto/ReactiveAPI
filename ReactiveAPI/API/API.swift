@@ -11,7 +11,7 @@ import ReactiveCocoa
 
 class API {
     
-    static func questions(request: NSURLRequest) -> Signal<[Items]?, NSError> {
-        return QuestionManager.questions(request)
+    static func questions() -> Signal<[Items]?, NSError> {
+        return QuestionManager.questions()
     }
 }

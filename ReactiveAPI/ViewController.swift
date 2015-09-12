@@ -14,10 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = NSURL(string: "https://api.stackexchange.com/2.2/questions?order=desc&sort=activity&site=stackoverflow")
-        let request = NSURLRequest(URL: url!)
-        
-        API.questions(request)
+        API.questions()
             .observe(next: { items in 
 
                 if let items = items {
