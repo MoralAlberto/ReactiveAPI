@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  ReactiveAPI
 //
-//  Created by Diana on 12/9/15.
+//  Created by Alberto Moral on 12/9/15.
 //  Copyright (c) 2015 Moral. All rights reserved.
 //
 
