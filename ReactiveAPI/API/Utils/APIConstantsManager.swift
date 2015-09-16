@@ -10,9 +10,11 @@ import Foundation
 
 class APIConstantsManager {
     
+    static var ApiConstants = "APIConstants"
+    
     static func setupPlist() -> NSDictionary {
         var myDict: NSDictionary?
-        let path = NSBundle.mainBundle().pathForResource("APIConstants", ofType: "plist")
+        let path = NSBundle.mainBundle().pathForResource(ApiConstants, ofType: "plist")
         let dict = NSDictionary(contentsOfFile: path!)
         
         return dict!
@@ -21,23 +23,18 @@ class APIConstantsManager {
 
 class APIConstants {
     
-    static func APIEndPoint() -> String {
+    static var ApiEndPoint = "APIEndPoint"
+    static var ApiPathQuestions = "APIPaths.APIPathQuestions"
+    
+    static func APIEndPoint() -> String? {
         let valueDict: NSDictionary = APIConstantsManager.setupPlist() as NSDictionary
         
-        if let key = valueDict["APIEndPoint"] as? String {
-            return key
-        } else {
-            return ""
-        }
+        return valueDict[ApiEndPoint] as? String
     }
     
-    static func APIPathQuestion() -> String {
+    static func APIPathQuestion() -> String? {
         let valueDict: NSDictionary = APIConstantsManager.setupPlist() as NSDictionary
         
-        if let key = valueDict.valueForKeyPath("APIPaths.APIPathQuestions") as? String {
-            return key
-        } else {
-            return ""
-        }
+        return valueDict.valueForKeyPath(ApiPathQuestions) as? String
     }
 }

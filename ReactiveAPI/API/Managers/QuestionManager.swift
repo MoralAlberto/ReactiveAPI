@@ -16,7 +16,7 @@ class QuestionManager {
         return Signal {
             sink in
             
-            let url = NSURL(string:"\(APIConstants.APIEndPoint()+APIConstants.APIPathQuestion())")
+            let url = NSURL(string:"\(APIConstants.APIEndPoint()!+APIConstants.APIPathQuestion()!)")
             let request = NSURLRequest(URL: url!)
             
             NetworkManager.dataWithRequest(request)
