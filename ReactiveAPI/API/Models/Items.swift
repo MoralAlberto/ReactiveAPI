@@ -16,9 +16,7 @@ class Items: Mappable {
     var score: Int?
     var title: String?
     
-    class func newInstance(map: Map) -> Mappable? {
-        return Items()
-    }
+    required init?(_ map: Map) {}
     
     //  Mappable
     func mapping(map: Map) {

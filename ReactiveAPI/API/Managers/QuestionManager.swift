@@ -12,7 +12,7 @@ import ObjectMapper
 
 class QuestionManager {
     
-    static func questions() -> Signal<[Items]?, NSError> {
+    static func questions() -> Signal<[Items]?, NoError> {
         return Signal {
             sink in
             
@@ -20,16 +20,18 @@ class QuestionManager {
             let request = NSURLRequest(URL: url!)
             
             NetworkManager.dataWithRequest(request)
-                .start(next: { data in
-
+                .startWithNext ({ data in
+                    
                     let questions: Question? = ParserManager.parse(data, toClass: Question.self)
                     
                     if let questions = questions {
                         sendNext(sink, questions.items)
                         sendCompleted(sink)
-                    } else {
-                        sendError(sink, NSError())
                     }
+                    /*else {
+                        //let error = NSError(domain: "1", code: 1, userInfo: [AnyObject: "AA"]!)
+                        sendError(sink, NoError)
+                    }*/
             })
             return nil
         }

@@ -15,9 +15,7 @@ class Question: Mappable {
     var quota_remaining: Int?
     var items: [Items]?
     
-    class func newInstance(map: Map) -> Mappable? {
-        return Question()
-    }
+    required init?(_ map: Map) {}
     
     //  Mappable
     func mapping(map: Map) {

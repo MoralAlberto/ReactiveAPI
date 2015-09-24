@@ -13,10 +13,6 @@
 		840E77011BA4318C003A26A9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840E76FF1BA4318C003A26A9 /* LaunchScreen.xib */; };
 		840E770D1BA4318C003A26A9 /* ReactiveAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E770C1BA4318C003A26A9 /* ReactiveAPITests.swift */; };
 		840E77321BA43427003A26A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E77311BA43427003A26A9 /* ViewController.swift */; };
-		840E77381BA434CC003A26A9 /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840E77341BA434CC003A26A9 /* Box.framework */; };
-		840E77391BA434CD003A26A9 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840E77351BA434CC003A26A9 /* ObjectMapper.framework */; };
-		840E773A1BA434CD003A26A9 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840E77361BA434CC003A26A9 /* ReactiveCocoa.framework */; };
-		840E773B1BA434CD003A26A9 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840E77371BA434CC003A26A9 /* Result.framework */; };
 		840E77471BA434D8003A26A9 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E773D1BA434D8003A26A9 /* API.swift */; };
 		840E77481BA434D8003A26A9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E77401BA434D8003A26A9 /* NetworkManager.swift */; };
 		840E77491BA434D8003A26A9 /* ParserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E77421BA434D8003A26A9 /* ParserManager.swift */; };
@@ -25,6 +21,9 @@
 		840E774C1BA434D8003A26A9 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E77461BA434D8003A26A9 /* Question.swift */; };
 		848940881BA493F500860F8B /* APIConstants.plist in Resources */ = {isa = PBXBuildFile; fileRef = 848940861BA493F500860F8B /* APIConstants.plist */; };
 		848940891BA493F500860F8B /* APIConstantsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848940871BA493F500860F8B /* APIConstantsManager.swift */; };
+		848FA3F61BB1DBEB001DD420 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848FA3F31BB1DBEB001DD420 /* ObjectMapper.framework */; };
+		848FA3F71BB1DBEB001DD420 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848FA3F41BB1DBEB001DD420 /* ReactiveCocoa.framework */; };
+		848FA3F81BB1DBEB001DD420 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848FA3F51BB1DBEB001DD420 /* Result.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,10 +47,6 @@
 		840E770B1BA4318C003A26A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		840E770C1BA4318C003A26A9 /* ReactiveAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveAPITests.swift; sourceTree = "<group>"; };
 		840E77311BA43427003A26A9 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		840E77341BA434CC003A26A9 /* Box.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Box.framework; sourceTree = "<group>"; };
-		840E77351BA434CC003A26A9 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = "<group>"; };
-		840E77361BA434CC003A26A9 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveCocoa.framework; sourceTree = "<group>"; };
-		840E77371BA434CC003A26A9 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Result.framework; sourceTree = "<group>"; };
 		840E773D1BA434D8003A26A9 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		840E77401BA434D8003A26A9 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		840E77421BA434D8003A26A9 /* ParserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserManager.swift; sourceTree = "<group>"; };
@@ -60,6 +55,9 @@
 		840E77461BA434D8003A26A9 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		848940861BA493F500860F8B /* APIConstants.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = APIConstants.plist; sourceTree = "<group>"; };
 		848940871BA493F500860F8B /* APIConstantsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstantsManager.swift; sourceTree = "<group>"; };
+		848FA3F31BB1DBEB001DD420 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = "<group>"; };
+		848FA3F41BB1DBEB001DD420 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveCocoa.framework; sourceTree = "<group>"; };
+		848FA3F51BB1DBEB001DD420 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Result.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,10 +65,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				840E77391BA434CD003A26A9 /* ObjectMapper.framework in Frameworks */,
-				840E773B1BA434CD003A26A9 /* Result.framework in Frameworks */,
-				840E773A1BA434CD003A26A9 /* ReactiveCocoa.framework in Frameworks */,
-				840E77381BA434CC003A26A9 /* Box.framework in Frameworks */,
+				848FA3F81BB1DBEB001DD420 /* Result.framework in Frameworks */,
+				848FA3F61BB1DBEB001DD420 /* ObjectMapper.framework in Frameworks */,
+				848FA3F71BB1DBEB001DD420 /* ReactiveCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,10 +142,9 @@
 		840E77331BA434CC003A26A9 /* Carthage */ = {
 			isa = PBXGroup;
 			children = (
-				840E77341BA434CC003A26A9 /* Box.framework */,
-				840E77351BA434CC003A26A9 /* ObjectMapper.framework */,
-				840E77361BA434CC003A26A9 /* ReactiveCocoa.framework */,
-				840E77371BA434CC003A26A9 /* Result.framework */,
+				848FA3F31BB1DBEB001DD420 /* ObjectMapper.framework */,
+				848FA3F41BB1DBEB001DD420 /* ReactiveCocoa.framework */,
+				848FA3F51BB1DBEB001DD420 /* Result.framework */,
 			);
 			path = Carthage;
 			sourceTree = "<group>";
@@ -219,7 +215,7 @@
 				840E76ED1BA4318C003A26A9 /* Sources */,
 				840E76EE1BA4318C003A26A9 /* Frameworks */,
 				840E76EF1BA4318C003A26A9 /* Resources */,
-				840E771F1BA4330A003A26A9 /* ShellScript */,
+				8443AA5A1BB47D08004014D8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -254,7 +250,9 @@
 		840E76E91BA4318C003A26A9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Moral;
 				TargetAttributes = {
 					840E76F01BA4318C003A26A9 = {
@@ -307,16 +305,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		840E771F1BA4330A003A26A9 /* ShellScript */ = {
+		8443AA5A1BB47D08004014D8 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Box.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 			);
 			outputPaths = (
 			);
@@ -402,6 +399,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -475,6 +473,7 @@
 				);
 				INFOPLIST_FILE = ReactiveAPI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AlbertoMoral.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -490,6 +489,7 @@
 				);
 				INFOPLIST_FILE = ReactiveAPI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AlbertoMoral.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -508,6 +508,7 @@
 				);
 				INFOPLIST_FILE = ReactiveAPITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AlbertoMoral.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactiveAPI.app/ReactiveAPI";
 			};
@@ -523,6 +524,7 @@
 				);
 				INFOPLIST_FILE = ReactiveAPITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AlbertoMoral.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactiveAPI.app/ReactiveAPI";
 			};
