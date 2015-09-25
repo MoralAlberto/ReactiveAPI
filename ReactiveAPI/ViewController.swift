@@ -15,13 +15,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         API.questions()
-            .observe({ items in 
-                print(items)
-//                if let items = items {
-//                    for item in items {
-//                        print("\(item.title)")
-//                    }
-//                }
+            .observe({ items in
+                if let items = items.value {
+                    for item in items {
+                        print("\(item.title!)")
+                    }
+                }
         })
     }
 }

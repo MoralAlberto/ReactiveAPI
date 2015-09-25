@@ -12,7 +12,7 @@ import ObjectMapper
 
 class QuestionManager {
     
-    static func questions() -> Signal<[Items]?, NoError> {
+    static func questions() -> Signal<[Items], NoError> {
         return Signal {
             sink in
             
@@ -24,8 +24,8 @@ class QuestionManager {
                     
                     let questions: Question? = ParserManager.parse(data, toClass: Question.self)
                     
-                    if let questions = questions {
-                        sendNext(sink, questions.items)
+                    if let questions = questions!.items {
+                        sendNext(sink, questions)
                         sendCompleted(sink)
                     }
                     /*else {
