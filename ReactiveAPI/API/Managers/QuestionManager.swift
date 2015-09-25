@@ -28,10 +28,6 @@ class QuestionManager {
                         sendNext(sink, questions)
                         sendCompleted(sink)
                     }
-                    /*else {
-                        //let error = NSError(domain: "1", code: 1, userInfo: [AnyObject: "AA"]!)
-                        sendError(sink, NoError)
-                    }*/
             })
             return nil
         }
