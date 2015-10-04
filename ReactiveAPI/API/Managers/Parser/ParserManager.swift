@@ -13,12 +13,10 @@ class ParserManager {
     
     /// Generic function available for every model.
     static func parse<T: Mappable>(data: NSData, toClass: T.Type) -> T {
-        var parseError: NSError?
         let parsedObject: AnyObject?
         do {
             parsedObject = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments)
-        } catch var error as NSError {
-            parseError = error
+        } catch _ as NSError {
             parsedObject = nil
         }
 

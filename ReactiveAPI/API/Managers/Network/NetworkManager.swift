@@ -17,9 +17,9 @@ class NetworkManager {
             .map { data, URLResponse in
                 return data
             }
-//            .catch { error in
-//                print("Network error ocurred \(error)", terminator: "")
-//                return SignalProducer.empty
-//        }
+            .flatMapError { error in
+                print("Network error ocurred: \(error)")
+                return SignalProducer.empty
+        }
     }
 }
