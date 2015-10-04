@@ -35,4 +35,36 @@ API.questions()
 
 Then, the API calls the forward method in **Questions** Class with all the necessary information (URL and Request).
 
-When the result is received from the previous request, the data is parsed in a correct model (all this happens in **Questions' manager**),then, the observer will receive all the questions.  
+**Questions' manager**, this class manage the data received from the request, and then it parses to a correct model and sends the object within the signal, then, the observer (the view controller) will receive all the questions because it's subscribed to receive a list of **items**.  
+
+###Parser Manager
+The best part of this method are Generics. We can parse any class with this method, reusable code! 
+
+```swift
+    static func parse<T: Mappable>(data: NSData, toClass: T.Type) -> T {
+        let parsedObject: AnyObject?
+        do {
+            parsedObject = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments)
+        } catch _ as NSError {
+            parsedObject = nil
+        }
+        let result = Mapper<T>().map(parsedObject)
+        return result!
+    }
+    ```
+
+###Network Manager
+
+```swift
+    class func dataWithRequest(request: NSURLRequest) -> SignalProducer<NSData, NSError> {
+        return NSURLSession.sharedSession().rac_dataWithRequest(request)
+            .retry(2)
+            .map { data, URLResponse in
+                return data
+            }
+            .flatMapError { error in
+                print("Network error ocurred: \(error)")
+                return SignalProducer.empty
+        }
+    }
+    ```
