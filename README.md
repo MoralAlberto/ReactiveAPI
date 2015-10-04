@@ -50,10 +50,11 @@ The best part of this method are Generics. We can parse any class with this meth
         }
         let result = Mapper<T>().map(parsedObject)
         return result!
-    }
-    ```
+    }```
+
 
 ###Network Manager
+Creates the network request, this class also is reusable with any server request.
 
 ```swift
     class func dataWithRequest(request: NSURLRequest) -> SignalProducer<NSData, NSError> {
