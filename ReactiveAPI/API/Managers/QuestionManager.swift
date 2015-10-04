@@ -12,20 +12,21 @@ import ObjectMapper
 
 class QuestionManager {
     
-    static func questions(request: NSURLRequest) -> Signal<[Items]?, NSError> {
+    static func questions() -> Signal<[Items], NoError> {
         return Signal {
             sink in
             
+            let url = NSURL(string:"\(APIConstants.APIEndPoint()!+APIConstants.APIPathQuestion()!)")
+            let request = NSURLRequest(URL: url!)
+            
             NetworkManager.dataWithRequest(request)
-                .start(next: { data in
-
+                .startWithNext ({ data in
+                    
                     let questions: Question? = ParserManager.parse(data, toClass: Question.self)
                     
-                    if let questions = questions {
-                        sendNext(sink, questions.items)
+                    if let questions = questions!.items {
+                        sendNext(sink, questions)
                         sendCompleted(sink)
-                    } else {
-                        sendError(sink, NSError())
                     }
             })
             return nil
