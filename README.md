@@ -1,5 +1,5 @@
 #ReactiveAPI
-ReactiveAPI is an API module that works with [Reactive Cocoa](https://github.com/ReactiveCocoa/ReactiveCocoa) and [ObjectMapper](https://github.com/Hearst-DD/ObjectMapper). The architecture is split in different logic parts: the manager, the request manager, the model and the parser model.
+ReactiveAPI is an API module that works with [Reactive Cocoa](https://github.com/ReactiveCocoa/ReactiveCocoa) and [ObjectMapper](https://github.com/Hearst-DD/ObjectMapper). The architecture is split in different logic parts: the managers, the network stuff, and the parser model.
 
 ##Requirements
 - iOS 8.0+
@@ -13,7 +13,7 @@ $ carthage update
 ``` 
 
 ##Architecture
-TODO:
+
 
 ##Example
 ReactiveAPI works with the Stackoverflow API. The main purpose is request the 30 most recent updated questions. To do that has been used  
