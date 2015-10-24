@@ -1,6 +1,19 @@
 #ReactiveAPI
 ReactiveAPI is an API module that works with [Reactive Cocoa](https://github.com/ReactiveCocoa/ReactiveCocoa) and [ObjectMapper](https://github.com/Hearst-DD/ObjectMapper). The architecture is split in different logic parts: the managers, the network stuff, and the parser model.
 
+This is a way to create a REST API with one goal: **Easy to maintain**. You can add more targets, managers or models in an easy way.
+
+The demo shows you who you can get the las 30 questions in **Stackoverflow** subscribing to a **cold signal** and parsing the JSON to the correct model ready to be displayed/used in your controller/view.
+
+Managers 	 | 			Models | 	Utils
+------------ | ------------- | ------------
+Questions Manager | Model Question  | Contants
+ 				 | Model Items  	| 
+
+The demo only shows a request to obtain questions in **Stackoverflow**, when the JSON is successfuly retrieved, it's modeled with Model Question and Model Items ready to use in the view controller.
+
+You can add more targets if you want to override the APIPathQuestions (maybe you0ve different deploy targets), to do that you only need to duplicate the APIConstants.plist and Info.plist and create a new scheme.
+
 ##Requirements
 - iOS 8.0+
 - Xcode 7.0
@@ -11,9 +24,6 @@ Run the following command in the root directory of your project
 ```bash
 $ carthage update
 ``` 
-
-##Architecture
-![Architecture](https://raw.githubusercontent.com/MoralAlberto/ReactiveAPI/develop/images/architecture_reactiveAPI.png)
 
 ##Example
 ReactiveAPI works with the Stackoverflow API. The main purpose is request the 30 most recent updated questions. 
@@ -69,6 +79,9 @@ class func dataWithRequest(request: NSURLRequest) -> SignalProducer<NSData, NSEr
           }
 }
 ```
+
+##Architecture
+![Architecture](https://raw.githubusercontent.com/MoralAlberto/ReactiveAPI/develop/images/architecture_reactiveAPI.png)
 
 ##License
 ReactiveAPIObjc is available under the MIT license.
