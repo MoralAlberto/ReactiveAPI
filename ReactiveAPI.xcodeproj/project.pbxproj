@@ -155,6 +155,7 @@
 				840E773D1BA434D8003A26A9 /* API.swift */,
 				840E773E1BA434D8003A26A9 /* Managers */,
 				840E77441BA434D8003A26A9 /* Models */,
+				848940851BA493F500860F8B /* Utils */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -165,7 +166,6 @@
 				840E77431BA434D8003A26A9 /* QuestionManager.swift */,
 				840E77411BA434D8003A26A9 /* Parser */,
 				840E773F1BA434D8003A26A9 /* Network */,
-				848940851BA493F500860F8B /* Utils */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -201,8 +201,7 @@
 				848940871BA493F500860F8B /* APIConstantsManager.swift */,
 				848940861BA493F500860F8B /* APIConstants.plist */,
 			);
-			name = Utils;
-			path = ../Utils;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
