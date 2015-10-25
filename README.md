@@ -16,7 +16,7 @@ You can add more targets if you want to override the APIPathQuestions (maybe you
 
 ##Requirements
 - iOS 8.0+
-- Xcode 7.0
+- Xcode 7.1
 
 ##Installation
 Run the following command in the root directory of your project
@@ -84,4 +84,4 @@ class func dataWithRequest(request: NSURLRequest) -> SignalProducer<NSData, NSEr
 ![Architecture](https://raw.githubusercontent.com/MoralAlberto/ReactiveAPI/develop/images/architecture_reactiveAPI.png)
 
 ##License
-ReactiveAPIObjc is available under the MIT license.
+ReactiveAPIO is available under the MIT license.
